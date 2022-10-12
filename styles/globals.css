@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* html, body, heading */
+@layer base {
+  body {
+    @apply bg-[#151515] text-white;
+  }
+  header {
+    @apply fixed bg-[#000] top-0 z-50 flex w-full justify-between px-4 py-5 items-center transition-all lg:px-10 lg:py-8;
+  }
+}
+
+/* custom class names */
+@layer components {
+  .headerLink {
+    @apply cursor-pointer text-sm font-light text-[#e1e1e1] transition duration-[400] hover:text-[#b2b2b4];
+  }
+}
