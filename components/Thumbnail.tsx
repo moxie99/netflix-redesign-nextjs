@@ -16,7 +16,7 @@ const Thumbnail = ({ movie }: Props) => {
         className="object-cover rounded-sm md:rounded"
         layout="fill"
       />
-      <h4 className="absolute text-sm text-center text-white top-24">
+      <h4 className="absolute text-sm text-center text-black top-24">
         {movie?.title?.substring(0, 16) || movie?.name?.substring(0, 16)}
       </h4>
     </div>
