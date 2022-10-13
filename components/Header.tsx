@@ -19,7 +19,7 @@ const Header = () => {
     };
   }, []);
   return (
-    <header className={`${isScrolled && "bg-red-500"}`}>
+    <header className={`${isScrolled && "bg-transparent"}`}>
       <div className="flex items-center space-x-3 md:space-x-10">
         <img
           src="https://cdn.dribbble.com/users/9378043/screenshots/16832559/netflix__1__4x.png"

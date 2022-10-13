@@ -5,7 +5,7 @@
 /* html, body, heading */
 @layer base {
   body {
-    @apply bg-[#151515] text-white;
+    @apply bg-[#141414] text-white !scrollbar-thin !scrollbar-track-transparent !scrollbar-thumb-red-900;
   }
   header {
     @apply fixed bg-[#000] top-0 z-50 flex w-full justify-between px-4 py-5 items-center transition-all lg:px-10 lg:py-8;
@@ -16,5 +16,8 @@
 @layer components {
   .headerLink {
     @apply cursor-pointer text-sm font-light text-[#e1e1e1] transition duration-[400] hover:text-[#b2b2b4];
+  }
+  .bannerButton {
+    @apply flex items-center px-5 py-2 text-sm font-semibold transition rounded gap-x-3 hover:opacity-75 md:py-3 md:px-10 md:text-xl;
   }
 }
