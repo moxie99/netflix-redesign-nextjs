@@ -19,6 +19,7 @@ export interface Movie{
     poster_path:string
     vote_average:string
     vote_count:number,
+    first_air_date:string
 }
 
 export interface Element {

@@ -1,9 +1,11 @@
 import React from "react";
 import { BellIcon, SearchIcon } from "@heroicons/react/outline";
 import Link from "next/link";
+import useAuth from "../hooks/useAuth";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = React.useState(false);
+  const { logout } = useAuth();
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -48,6 +50,13 @@ const Header = () => {
             className="w-8 h-8 rounded cursor-pointer"
           />
         </Link>
+
+        <img
+          onClick={logout}
+          src="https://cdn.pixabay.com/photo/2017/05/29/23/02/logging-out-2355227_1280.png"
+          alt="account"
+          className="w-8 h-8 rounded cursor-pointer"
+        />
       </div>
     </header>
   );
